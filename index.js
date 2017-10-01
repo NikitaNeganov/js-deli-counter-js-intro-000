@@ -16,7 +16,11 @@ function currentLine(line){
   if (line.length > 0){
     var arrayLine = '';
     for (var i = 1; i <= line.length; i++){
+      if (i == line.length){
+      arrayLine = arrayLine+(`${i}. ${line[i-1]} `)
+    } else {
       arrayLine = arrayLine+(`${i}. ${line[i-1]}, `)
+    }
     }
     return (`The line is currently: ${arrayLine}`)
   } else {
