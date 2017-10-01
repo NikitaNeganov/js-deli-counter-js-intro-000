@@ -12,3 +12,14 @@ function nowServing(line){
     return message;
   }
 }
+function currentLine(line){
+  if (line.length > 0){
+    var arrayLine;
+    for (var i = 1; i <= line.length; i++){
+      arrayLine = arrayLine+(`${i}. ${line[i-1]}, `)
+    }
+    return (`The line is currently: ${arrayLine}`)
+  } else {
+    return 'The line  is currently empty.'
+  }
+}
