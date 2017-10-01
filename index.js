@@ -24,6 +24,6 @@ function currentLine(line){
     }
     return (`The line is currently: ${arrayLine}`)
   } else {
-    return 'The line  is currently empty.'
+    return 'The line is currently empty.'
   }
 }
