@@ -17,7 +17,7 @@ function currentLine(line){
     var arrayLine = '';
     for (var i = 1; i <= line.length; i++){
       if (i == line.length){
-      arrayLine = arrayLine+(`${i}. ${line[i-1]} `)
+      arrayLine = arrayLine+(`${i}. ${line[i-1]}`)
     } else {
       arrayLine = arrayLine+(`${i}. ${line[i-1]}, `)
     }
