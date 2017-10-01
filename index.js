@@ -14,7 +14,7 @@ function nowServing(line){
 }
 function currentLine(line){
   if (line.length > 0){
-    var arrayLine;
+    var arrayLine = '';
     for (var i = 1; i <= line.length; i++){
       arrayLine = arrayLine+(`${i}. ${line[i-1]}, `)
     }
